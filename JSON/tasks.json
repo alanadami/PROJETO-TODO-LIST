@@ -1,12 +1,12 @@
 [
     {
         "id": 1,
-        "tarefa": "Estudar NodeJS",
+        "task": "Estudar NodeJS",
         "completed": false
     },
     {
         "id": 2,
-        "tarefa": "Roçar o quintal",
+        "task": "Roçar o quintal",
         "completed": true
     }
 ]
