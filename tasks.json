@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "tarefa": "Estudar NodeJS",
+        "completed": false
+    },
+    {
+        "id": 2,
+        "tarefa": "Roçar o quintal",
+        "completed": true
+    }
+]
