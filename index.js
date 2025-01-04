@@ -53,7 +53,10 @@ app.put("/tasks/:id", (req, res) => {
             res.status(500).send("Não foi possível ler o arquivo")
         }
         let tasks = JSON.parse(data)
-        const taskId = tasks.find(id => id === parseInt(req.body.id))
+        const taskId = parseInt(req.params.id)
+
+        const task = tasks.find(t => t.id === taskId)
+    
 
         if (!taskId) {
             res.status(404).send("Tarefa não encontrada")            
