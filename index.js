@@ -46,3 +46,17 @@ app.post("/tasks", (req, res) => {
     })
     
 })
+
+app.put("/tasks/:id", (req, res) => {
+    fs.readFile(jsonFile, "utf-8", (err, data) => {
+        if (err) {
+            res.status(500).send("Não foi possível ler o arquivo")
+        }
+        let tasks = JSON.parse(data)
+        const taskId = tasks.find(id => id === parseInt(req.body.id))
+
+        if (!taskId) {
+            res.status(404).send("Tarefa não encontrada")            
+        }
+    })
+})

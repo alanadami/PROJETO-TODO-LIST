@@ -14,7 +14,4 @@ app.listen(PORT, () => {
     
 })
 
-module.exports = {
-    app,
-    bodyParser
-}
+module.exports = app

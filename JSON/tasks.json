@@ -1,12 +1,17 @@
 [
-    {
-        "id": 1,
-        "task": "Estudar NodeJS",
-        "completed": false
-    },
-    {
-        "id": 2,
-        "task": "Roçar o quintal",
-        "completed": true
-    }
+  {
+    "id": 1,
+    "task": "Estudar NodeJS",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "task": "Roçar o quintal",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "task": "Lavar a moto",
+    "completed": false
+  }
 ]
